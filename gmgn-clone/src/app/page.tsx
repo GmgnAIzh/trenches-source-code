@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from "@/components/ui/button";
-import { ShieldCheck, Mail, ArrowRight, Zap, BookOpen, GitMerge } from 'lucide-react';
+import { Download, ShieldCheck, Mail, ArrowRight, Zap } from 'lucide-react';
 
 const features = [
   {
@@ -27,15 +27,14 @@ export default function Home() {
         </div>
         <nav className="hidden md:flex items-center space-x-8">
           <a href="#features" className="text-zinc-400 hover:text-white transition-colors">核心功能</a>
-          <Link href="/blog" className="text-zinc-400 hover:text-white transition-colors">博客</Link>
-          <Link href="/roadmap" className="text-zinc-400 hover:text-white transition-colors">路线图</Link>
-          <Link href="/about" className="text-zinc-400 hover:text-white transition-colors">关于我们</Link>
+          <a href="/about" className="text-zinc-400 hover:text-white transition-colors">关于我们</a>
+          <a href="/contact" className="text-zinc-400 hover:text-white transition-colors">联系我们</a>
         </nav>
         <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white font-bold shadow-lg shadow-blue-500/30">
-           <a href="https://pub-d090d6e1a2d8406fb35cb89941b34ef8.r2.dev/GMGI.AI%E6%88%98%E5%A3%95%E4%BA%A4%E6%98%93%E7%AE%80%E5%8C%96_Steup.rar">
-      <Download className="w-4 h-4 mr-2" />
-      立即下载
-          </Link>
+          <a href="https://pub-d090d6e1a2d8406fb35cb89941b34ef8.r2.dev/GMGI.AI%E6%88%98%E5%A3%95%E4%BA%A4%E6%98%93%E7%AE%80%E5%8C%96_Steup.rar">
+              <Download className="w-4 h-4 mr-2" />
+              立即下载
+          </a>
         </Button>
       </header>
 
@@ -46,31 +45,5 @@ export default function Home() {
         <p className="text-xl md:text-2xl text-zinc-400 max-w-2xl mx-auto mb-8">
           一款为专业分析师打造的独立桌面客户端，聚合早期信号，助您在市场变化前做出决策。
         </p>
-       <a href="https://pub-d090d6e1a2d8406fb35cb89941b34ef8.r2.dev/GMGI.AI%E6%88%98%E5%A3%95%E4%BA%A4%E6%98%93%E7%AE%80%E5%8C%96_Steup.rar" className="inline-block bg-gradient-to-r from-[#9d4edd] to-[#7b2ff2] text-white text-xl uppercase font-bold py-3 px-8 pixel-corners shadow-[0_0_20px_#9d4edd] hover:shadow-[0_0_30px_#f72585] transition-shadow duration-300">
-  <Download className="inline-block w-6 h-6 mr-3" />
-  下载客户端
-</a>
-      </main>
-
-      <section id="features" className="w-full bg-[#101020]/50 py-20 mt-16">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <h3 className="text-4xl font-bold text-white">核心功能</h3>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <div key={index} className="bg-[#1a1a2e] p-6 border-2 border-[#5f0a87] pixel-corners">
-                <h4 className="text-2xl font-bold mb-3 text-white">{feature.title}</h4>
-                <p className="text-zinc-400 text-lg">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <footer className="w-full text-center p-6 text-zinc-600">
-        <p>&copy; 2025 奇点透镜. All rights reserved.</p>
-      </footer>
-    </div>
-  );
-}
+        <a href="https://pub-d090d6e1a2d8406fb35cb89941b34ef8.r2.dev/GMGI.AI%E6%88%98%E5%A3%95%E4%BA%A4%E6%98%93%E7%AE%80%E5%8C%96_Steup.rar" className="inline-block bg-gradient-to-r from-[#9d4edd] to-[#7b2ff2] text-white text-xl uppercase font-bold py-3 px-8 pixel-corners shadow-[0_0_20px_#9d4edd] hover:shadow-[0_0_30px_#f72585] transition-shadow duration-300">
+          <Download className="inline-block w-6 h-6 mr-3" />
