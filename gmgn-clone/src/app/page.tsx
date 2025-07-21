@@ -38,9 +38,9 @@ export default function Home() {
         <p className="text-xl md:text-2xl text-zinc-400 max-w-2xl mx-auto mb-8">
           一款为专业分析师打造的独立桌面客户端，聚合早期信号，助您在市场变化前做出决策。
         </p>
-        <a href="https://pub-d090d6e1a2d8406fb35cb89941b34ef8.r2.dev/GMGI.AI%E6%88%98%E5%A3%95%E4%BA%A4%E6%98%93%E7%AE%80%E5%8C%96_Steup.rar" className="inline-block bg-gradient-to-r from-[#9d4edd] to-[#7b2ff2] text-white text-xl uppercase font-bold py-3 px-8 pixel-corners shadow-[0_0_20px_#9d4edd] hover:shadow-[0_0_30px_#f72585] transition-shadow duration-300">
+        <a href="#" className="inline-block bg-gradient-to-r from-[#9d4edd] to-[#7b2ff2] text-white text-xl uppercase font-bold py-3 px-8 pixel-corners shadow-[0_0_20px_#9d4edd] hover:shadow-[0_0_30px_#f72585] transition-shadow duration-300">
           <Download className="inline-block w-6 h-6 mr-3" />
-          下载客户端
+          客户端
         </a>
       </main>
 
