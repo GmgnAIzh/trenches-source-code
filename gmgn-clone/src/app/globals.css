@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Cyber Purple Pixelated Theme Reset */
+body {
+  background-color: #1a1a2e; /* Deep space blue */
+  color: #e0e0e0;
+  font-family: 'VT323', monospace;
+  image-rendering: pixelated; /* Keep pixel art sharp */
+}
+
+/* Pixelated, retro-gaming corners for a unique identity */
+.pixel-corners {
+  clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+}
+
+/* Cyber purple color palette variables */
+:root {
+  --cyber-purple-bg: #1a1a2e;
+  --cyber-purple-fg: #e0e0e0;
+  --cyber-purple-accent: #9d4edd;
+  --cyber-purple-accent2: #7b2ff2;
+  --cyber-purple-border: #5f0a87;
+  --cyber-purple-highlight: #f72585;
+}
+
+/* Example usage of the new palette and pixel-corners */
+.button-cyber {
+  background: linear-gradient(90deg, var(--cyber-purple-accent), var(--cyber-purple-accent2));
+  color: var(--cyber-purple-fg);
+  border: 2px solid var(--cyber-purple-border);
+  font-family: 'VT323', monospace;
+  padding: 0.5em 1.5em;
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  box-shadow: 0 0 0 4px var(--cyber-purple-border);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  image-rendering: pixelated;
+}
+
+.button-cyber:hover, .button-cyber:focus {
+  background: var(--cyber-purple-highlight);
+  color: #fff;
+  box-shadow: 0 0 0 6px var(--cyber-purple-accent2);
+}
+
+hr {
+  border: none;
+  border-top: 2px dashed var(--cyber-purple-accent2);
+  margin: 2em 0;
+}
+
+a {
+  color: var(--cyber-purple-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s;
+}
+
+a:hover, a:focus {
+  color: var(--cyber-purple-highlight);
+}
+
+/* Remove all previous design traces */
+* {
+  box-sizing: border-box;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom selection color for cyber purple theme */
+::selection {
+  background: var(--cyber-purple-accent2);
+  color: #fff;
+}
